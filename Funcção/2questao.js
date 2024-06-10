@@ -1,4 +1,5 @@
-function valores(){
-    return 5 + 5;
+function valores(x, y){
+    return x + y;
 }
-console.log(valores());
+
+console.log(`${valores(10, 5)}`);
