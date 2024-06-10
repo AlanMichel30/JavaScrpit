@@ -1,5 +1,3 @@
-//var entrada = require('readline-sync');
-
 var idade = [10, 12, 14, 16, 20];
 
 console.log(`Primeira idade ${idade[0]}`);
