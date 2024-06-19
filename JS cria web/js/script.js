@@ -6,14 +6,29 @@ body.style.alignItems = 'center';
 body.style.minHeight = '100vh';
 body.style.overflow = 'hidden';
 
+
 const div2 = document.createElement('div');
+//const div = document.createElement('div');
+//const text = document.createElement('h1');
+//text.innerHTML = 'Olá';
+//div.appendChild(text);
+
+//div.style.textAlign = 'center';
+//div.style.display = 'flex';
+//div.style.justifyContent = 'center';
+ 
 div2.style.width = '1200px';
 div2.style.height = '600px';
 div2.style.display = 'flex';
 div2.style.justifyContent = 'center';
 div2.style.alignItems = 'center';
 div2.style.backgroundColor = 'gray';
+
 body.appendChild(div2);
+
+//div3.style.textAlign = 'center';
+//div3.style.display = 'flex';
+//div3.style.justifyContent = 'center';
 
 const div_form = document.createElement('div');
 const frm = document.createElement('form');
@@ -30,6 +45,21 @@ const inputElementSubmit = document.createElement('input');
 const inputElementBr4 = document.createElement('br');
 const inputElementBr6 = document.createElement('br');
 const inputElementBr5 = document.createElement('h3');
+
+inputElementText.style.width = '500px'
+inputElementNumber1.style.width = '500px'
+inputElementNumber2.style.width = '500px'
+inputElementNumber3.style.width = '500px'
+inputElementSubmit.style.width = '508px'
+
+inputElementSubmit.style.backgroundColor = 'blue'
+inputElementSubmit.style.color = 'white'
+
+inputElementText.style.margin = '10px'
+inputElementNumber1.style.margin = '10px'
+inputElementNumber2.style.margin = '10px'
+inputElementNumber3.style.margin = '10px'
+inputElementSubmit.style.margin = '10px'
 
 
 inputElementText.type = 'text';
