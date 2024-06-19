@@ -1,10 +1,32 @@
+const header = document.createElement('header');
+header.style.backgroundColor = 'black';
+header.style.width = '102%';
+header.style.height = '90px';
+header.style.marginLeft = '-8px';
+header.style.marginTop = '-10px';
+
+const reset = document.createElement('p');
+reset.textContent = 'Reset Git';
+reset.style.color = 'white';
+reset.style.fontSize = '20px';
+reset.style.display = 'flex';
+reset.style.justifyContent = 'center'
+
+const git = document.createElement('p');
+git.style.color = 'white';
+git.style.fontSize = '20px'
+
+header.appendChild(reset);
+header.appendChild(git);
+
 const body = document.querySelector('body');
-body.style.backgroundColor = 'white';
-body.style.display = 'flex';
-body.style.justifyContent = 'center';
-body.style.alignItems = 'center';
-body.style.minHeight = '100vh';
-body.style.overflow = 'hidden';
+//body.style.backgroundColor = 'white';
+//body.style.display = 'flex';
+//body.style.justifyContent = 'center';
+//body.style.alignItems = 'center';
+//body.style.minHeight = '100vh';
+//body.style.overflow = 'hidden';
+body.appendChild(header);
 
 
 const div2 = document.createElement('div');
@@ -16,19 +38,22 @@ const div2 = document.createElement('div');
 //div.style.textAlign = 'center';
 //div.style.display = 'flex';
 //div.style.justifyContent = 'center';
- 
-div2.style.width = '1200px';
-div2.style.height = '600px';
+
+
 div2.style.display = 'flex';
 div2.style.justifyContent = 'center';
 div2.style.alignItems = 'center';
-div2.style.backgroundColor = 'gray';
+div2.style.backgroundColor = '#D3D3D3';
+div2.style.marginTop = '60px';
+div2.style.marginLeft = '100px';
+div2.style.marginRight= '100px';
+div2.style.padding = '80px'
+
+
 
 body.appendChild(div2);
 
-//div3.style.textAlign = 'center';
-//div3.style.display = 'flex';
-//div3.style.justifyContent = 'center';
+
 
 const div_form = document.createElement('div');
 const frm = document.createElement('form');
@@ -52,7 +77,7 @@ inputElementNumber2.style.width = '500px'
 inputElementNumber3.style.width = '500px'
 inputElementSubmit.style.width = '508px'
 
-inputElementSubmit.style.backgroundColor = 'blue'
+inputElementSubmit.style.backgroundColor = 'black'
 inputElementSubmit.style.color = 'white'
 
 inputElementText.style.margin = '10px'
@@ -60,6 +85,12 @@ inputElementNumber1.style.margin = '10px'
 inputElementNumber2.style.margin = '10px'
 inputElementNumber3.style.margin = '10px'
 inputElementSubmit.style.margin = '10px'
+
+inputElementText.style.height = '30px'
+inputElementNumber1.style.height = '30px'
+inputElementNumber2.style.height = '30px'
+inputElementNumber3.style.height = '30px'
+inputElementSubmit.style.height = '30px'
 
 
 inputElementText.type = 'text';
@@ -99,27 +130,27 @@ div2.appendChild(div_form);
 
 frm.addEventListener('submit', (e) => {
     e.preventDefault();
-
+    
     const nome = frm.inNome.value;
     const num1 = Number(frm.inNumero1.value);
     const num2 = Number(frm.inNumero2.value);
     const num3 = Number(frm.inNumero3.value);
     const media = (num1 + num2 + num3) / 3;
-
+    
     if (media >= 10) {
-        resp.innerHTML = `${nome}. UAU! Parabéns Top, aprovado! Média é ${media.toFixed(1)}`;
+        resp.innerHTML = `${nome}. UAU! Parabéns Top, Aprovado! Média é ${media.toFixed(1)}`;
         resp.style.color = 'blue';
     } else if (media >= 7) {
-        resp.innerHTML = `${nome}. Parabéns, aprovado! Média é ${media.toFixed(1)}`;
+        resp.innerHTML = `${nome}. Parabéns, Aprovado! Média é ${media.toFixed(1)}`;
         resp.style.color = 'green';
     } else if (media <= 3) {
-        resp.innerHTML = `${nome}. Está reprovado. Média é ${media.toFixed(1)}`;
+        resp.innerHTML = `${nome}. Está Reprovado. Média é ${media.toFixed(1)}`;
         resp.style.color = 'red';
     } else {
         resp.innerHTML = `${nome}. Recuperação. Média é ${media.toFixed(1)}`;
-        resp.style.color = 'yellow';
+        resp.style.color = 'peru';
     }
 });
 
-const resp = document.createElement('h3');
+const resp = document.createElement('h2');
 div_form.appendChild(resp);
