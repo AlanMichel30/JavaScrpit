@@ -3,16 +3,18 @@ header.style.backgroundColor = 'black';
 header.style.width = '102%';
 header.style.height = '90px';
 header.style.marginLeft = '-8px';
-header.style.marginTop = '-10px';
+header.style.marginTop = '-21px';
+header.style.display = `flex`;
+header.style.justifyContent = `space-around`
+header.style.alignItems = `center`
 
 const reset = document.createElement('p');
-reset.textContent = 'Reset Git';
+reset.textContent = 'Reset';
 reset.style.color = 'white';
 reset.style.fontSize = '20px';
-reset.style.display = 'flex';
-reset.style.justifyContent = 'center'
 
 const git = document.createElement('p');
+git.textContent = `Git`
 git.style.color = 'white';
 git.style.fontSize = '20px'
 
@@ -20,37 +22,24 @@ header.appendChild(reset);
 header.appendChild(git);
 
 const body = document.querySelector('body');
-//body.style.backgroundColor = 'white';
-//body.style.display = 'flex';
-//body.style.justifyContent = 'center';
-//body.style.alignItems = 'center';
-//body.style.minHeight = '100vh';
-//body.style.overflow = 'hidden';
 body.appendChild(header);
 
 
 const div2 = document.createElement('div');
-//const div = document.createElement('div');
-//const text = document.createElement('h1');
-//text.innerHTML = 'Olá';
-//div.appendChild(text);
-
-//div.style.textAlign = 'center';
-//div.style.display = 'flex';
-//div.style.justifyContent = 'center';
-
-
 div2.style.display = 'flex';
 div2.style.justifyContent = 'center';
 div2.style.alignItems = 'center';
+div2.style.flexDirection = `column`
 div2.style.backgroundColor = '#D3D3D3';
 div2.style.marginTop = '60px';
 div2.style.marginLeft = '100px';
 div2.style.marginRight= '100px';
 div2.style.padding = '80px'
 
+const text = document.createElement('h1');
+text.textContent = 'Atividade final ';
 
-
+div2.appendChild(text);
 body.appendChild(div2);
 
 
