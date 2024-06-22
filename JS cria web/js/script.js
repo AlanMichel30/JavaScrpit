@@ -37,7 +37,7 @@ div2.style.marginRight= '100px';
 div2.style.padding = '80px'
 
 const text = document.createElement('h1');
-text.textContent = 'Atividade final ';
+text.textContent = 'Atividade de Programação Web ';
 
 div2.appendChild(text);
 body.appendChild(div2);
